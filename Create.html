@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE | Funkoshop</title>
+    <link rel="stylesheet" href="#" />
+</head>
+<body>
+    <header><!--Inicio header-->
+        <nav class="navbar_header_container">
+            <picture class="Isologotipo_Funkshop" id="Isologotipo_Funkshop">
+                <a href="./home.html">
+                <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
+                </a>
+            </picture >    
+            <ul class="list_edit" id="list_edit">
+                <li><a href="#">VER TIENDA</a></li>
+                <li><a href="#">ADMIN</a></li>
+                <li><a href="#">SALIR</a></li>
+            </ul>
+        </nav>
+    </header><!--Fin header-->
+    <main><!--Incio main-->
+    <section class="create_container" id="create_container">
+        <h1>CREAR NUEVO ITEM</h1>     
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+            <div class="cat_lic" id="cat_lic">
+                <label for="Categoria">Categoria</label>
+                <select name="Categoria"  class="Categoria" id="Categoria">
+                    <option value="Categoria" selected></option>
+                    <option value="Figuras" >Figuras</option>
+                    <option value="Categoria 2">categoria 2</option>
+                    <option value="Categoria 3">categoria 3</option>
+                    <option value="Categoria 4">categoria 4</option>
+                </select>
+                <label for="">Licencia</label>
+                <select name="Licencia"  class="Licencia" id="Licencia">
+                    <option value="Licencia" selected></option>
+                    <option value="naruto" >Naruto Shippuden</option>
+                    <option value="Licencia 2">Licencia 2</option>
+                    <option value="Licencia 3">Licencia 3</option>
+                    <option value="Licencia 4">Licencia 4</option>
+                </select>
+            </div>
+            <div  class="name_product_edit" id="name_product_edit">
+                <label for="Name_product_edit" >Nombre del producto:</label>
+                <input type="text" name="Name_pro_ed" class="Name_product_edit" id="Name_product_edit" required>
+            </div>  
+            <div  class="Description_product_edit" id="Description_product_edit">
+                <textarea   name="Description_product_edit"  class="Description_product_edit" id="Description_product_edit"  cols="50" rows="5" placeholder="Ingresa la escripción del producto"></textarea>
+            </div>
+            <div  class="sku_price_stock" id="sku_price_stock">
+                <label for="Sku_edit">SKU:</label>
+                <input type="text" name="Sku" id="Sku_edit">
+                <label for="Price_edit">Precio:</label>
+                <input type="number" name="Precio" id="Price_edit">
+                <label for="Stock">Nombre del producto:</label>
+                <input type="number" name="stock" id="stock_edit">
+            </div>  
+            <div class="desc_cuotas" class="desc_cuotas"  id="desc_cuotas">
+                <label for="Descuento">Descuento:</label>
+                <input type="number" name="descuento" id="Descuento" required>
+                <label for="Cuotas">Cuotas:</label>
+                <select name="Cuotas" class="Cuotas"  id="Cuotas">
+                    <option value="cuotas" selected></option>
+                    <option value="6 cuotas" >6 cuotas sin interés</option>
+                    <option value="9 cuotas">9 cuotas sin interés</option>
+                    <option value="12 cuotas">12 cuotas sin interés</option>
+                    <option value="36 cuotas">36 cuotas sin interés</option>
+                </select>
+            </div>
+            <div class="img_product_edit" class="img_product_create" id="img_product_edit">
+                <label for="Imagen_Prod_edit">Imágenes:</label>
+                <input type="file" name="Img_p_c" class="Imagen_Prod_create" id="Imagen_Prod_create" required>
+            </div>
+            <div class="button_create"  id="button_create">   
+                <button type="submit" class="create_product" id="create_product">Agregar Producto</button>
+            </div>
+            <div class="button_clean"  id="button_clean">   
+                <button type="reset" class="clean_product" id="clean_product">Limpiar</button>
+            </div>
+        </form>
+    </section>
+    </main><!--Fin main-->
+    <footer> <!--Inicio Footer-->
+        <nav class="navbar_footer_container" id="navbar_footer_container">  
+            <ul  class="list-edit" id="list-edit ">
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">REGISTRARSE</a></li>
+                <li><a href="#">INGRESAR</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+            <picture id="Logotipo-Funkshop">
+                <a href="./home.html">
+                <img src="./img/branding/isotype.svg" alt="Logo de la marca Funkoshop">
+                </a>
+            </picture > 
+        </nav>
+        <div id="CR">
+            <P>All rights reserved 2023 - Funkoshop &copy</P>
+        </div>
+    </footer><!--Fin footer-->
+</body>
+</html>
