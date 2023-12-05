@@ -21,7 +21,7 @@
                 <li class="navbar__item"><a class="navbar__link" href=""><img src="/img/iconos/cart-icon.svg" alt="icono de carrito de compras"></a></li>  
             </ul>  
         </nav>
-      </header>
+    </header>
     <main class="container">
         <section class="collection container">
             <img class="collection__img" src="/img/star-wars/baby-yoda-1.webp" alt="Baby Yoda">
@@ -30,16 +30,21 @@
                 <h1 class="collection__title">BABY YODA BLUEBALL</h1>
                 <p class="collection__texto">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
                 <p class="collection__precio">$1799,99</p>
-                <input class="collection__input" type="number" name="cantidad_de_Productos" id="cantidad_de_Productos" placeholder="0">
-                <button class="collection__button">Agregar al Carrito</button>
+                <div class="item__cart">
+                    <button class="item__quantity" type="button">-</button>
+                    <input class="item__input" type="text" name="cantidad_de_Productos" id="cantidad_de_Productos" placeholder="0">
+                    <button class="item__quantity" type="button">+</button>
+                    <button class="item__submit" type="submit">Agregar al Carrito</button>
+                </div>
                 <a class="collection__link" href="">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>            
             </article>
         </section>
     </main>        
-        <aside class="container">
+        <aside class="container glide">
             <h2 class="collection_2_title">PRODUCTOS RELACIONADOS</h2>
-            <ul class="collection_2_list">
-                <li>
+            <div class="glide__track" data-glide-el="track">
+            <ul class="collection_2_list glide__slides">
+                <li class="glide__slide">
                     <article class="collection_2_article">
                         <a href=""></a>
                             <picture>
@@ -54,7 +59,7 @@
                         </a> 
                     </article>
                 </li>
-                <li>
+                <li class="glide__slide">
                     <article class="collection_2_article">
                         <a href=""></a>
                             <picture>
@@ -69,22 +74,27 @@
                         </a> 
                     </article>
                 </li>
-                <li>
+                <li class="glide__slide">
                     <article class="collection_2_article">
                         <a href=""></a>
                             <picture>
                                 <img class="collection_2_img" src="/img/harry-potter/luna-1.webp" alt="Figura de LUNA LOVEGOOD LION MASK">   
                             </picture>
-                             <div>
+                            <div>
                             <p>HARRY POTTER</p>
                             <h4>LUNA LOVEGOOD LION MASK</h4>
                             <p>$1799,99</p>
                             <p>3 cuotas sin interes</p>
-                             </div>
-                         </a> 
+                            </div>
+                        </a> 
                     </article>
                 </li>
-            </ul>
+            </ul>    
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon icon="material-symbols:chevron-left"></iconify-icon></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon icon="ic:baseline-chevron-right"></iconify-icon></button>
+            </div>
         </aside>
     <footer>
         <section class="foot__sec">
@@ -101,5 +111,8 @@
         </section>
             <p class="foot__p">All rights reserved 2023 - Funkoshop &copy;</p>  
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://unpkg.com/@glidejs/glide"></script>
+    <script src="/JS/glide.js"></script>
 </body>
 </html>
